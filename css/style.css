@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    user-select: none;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --background-body:#202020;
+     --background-secund-header:#2a2a2a ;
+     --background-button: #f64318; /*#ff4e02;*/
+     --background-card: #2a2a2a;
+     --color-text-evidenc: #fd4819;
+     --color-title: #b4b0b1;
+     --color-text: #b4b0b1;
+     --color-title2: #fff;
+
+}
+
+@keyframes helloAnimation{
+    0%{
+        color: #fff;
+    }
+    100%{
+        color: var(--color-text-evidenc);
+    }
+}
+
+/*Style Header*/
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    background-color: var(--background-body);
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+header.sticky{
+    background: var(--background-secund-header);
+    /*padding: 2%;*/
+    box-shadow: 0px 0px 10px rgb(0, 0, 0 / 10%);
+}
+.logo{
+    max-width: 100%;
+    width: 2.125rem;
+}
+.nav-menu{
+    display: flex;
+    gap: 2.5rem;
+}
+.nav-menu a{
+    color: var(--color-title);
+    transition: all .40s ease-in-out;
+    text-transform: capitalize;
+}
+.nav-menu a:hover{
+    cursor: pointer;
+    color: var(--color-text-evidenc);
+}
+a .evidencia{
+    color: var(--color-text-evidenc);
+}
+section{
+    padding: 5% 10%;
+}
+
+/*Section Show-----------------------*/
+.evidencia{
+    color: var(--color-text-evidenc);
+}
+.main-img img{
+    height: 400px;
+}
+.main-home{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px, auto));
+    height: 100vh;
+    align-items: center;
+    background-color: var(--background-body);
+    gap: 3rem;
+    
+}
+.down-arrow{
+    position: absolute;
+    top: 85%;
+    right: 11%;
+}
+.main-text h5{
+    animation: helloAnimation 3s infinite ;
+    font-size: 2rem;
+}
+.main-text h1{
+    font-size: 3.0625rem;
+    color: var(--color-title2);
+}
+.main-text .evidencia{
+    color: var(--color-text-evidenc);
+}
+
+/*Section about me*/
+.about-me{
+    background-color: var(--background-body);
+}
+.img-about{
+    max-width: 100%;
+    min-width: 200px;
+    height: auto;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    gap: 1.5rem; /*Em analise*/
+    margin: 30px 0; 
+    align-items: center;
+}
+.about-text h2{
+    color: var(--color-title2);
+    margin-bottom: 1.5rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.about-text p{
+    color: var(--color-text);
+    width: 600px;
+    line-height: 1.6rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    transition: all .40s;
+}
+.btnRead-more{
+    /*background-color: var(--background-button);*/
+    padding: 10px;
+    background: none;
+   
+    cursor: pointer;
+    border: 1px solid var(--background-button);
+    transition: all .42s;
+    color: var(--color-title2);
+}
+.btnRead-more:hover{
+    border-radius: 5px;
+    background-color: var(--background-button);
+    color: var(--color-title2);
+}
+.read-more{
+    display: none;
+}
