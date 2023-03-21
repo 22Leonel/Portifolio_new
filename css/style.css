@@ -20,7 +20,7 @@ body{
      --background-secund-header:#2a2a2a ;
      --background-button: #f64318; /*#ff4e02;*/
      --background-card: #2a2a2a;
-     --color-text-evidenc: #fd4819;
+     --color-text-evidence: #fd4819;
      --color-title: #b4b0b1;
      --color-text: #b4b0b1;
      --color-title2: #fff;
@@ -32,11 +32,25 @@ body{
         color: #fff;
     }
     100%{
-        color: var(--color-text-evidenc);
+        color: var(--color-text-evidence);
     }
 }
 
 /*Style Header*/
+#menu-icon{
+    color: var(--color-title);
+    font-size: 1.8rem;
+    cursor: pointer;
+    
+}
+.down-arrow i{
+    color: var(--color-text);
+    font-size: 2rem;
+    vertical-align: middle;
+    border: 1px solid var(--color-text);
+    border-radius: 50%;
+    padding: 10px;
+}
 header{
     display: flex;
     justify-content: space-around;
@@ -70,10 +84,10 @@ header.sticky{
 }
 .nav-menu a:hover{
     cursor: pointer;
-    color: var(--color-text-evidenc);
+    color: var(--color-text-evidence);
 }
 a .evidencia{
-    color: var(--color-text-evidenc);
+    color: var(--color-text-evidence);
 }
 section{
     padding: 5% 10%;
@@ -82,7 +96,7 @@ section{
 /*==================================================*/
 /*Section Show-----------------------*/
 .evidencia{
-    color: var(--color-text-evidenc);
+    color: var(--color-text-evidence);
 }
 
 .main-home{
@@ -107,7 +121,7 @@ section{
     color: var(--color-title2);
 }
 .main-text .evidencia{
-    color: var(--color-text-evidenc);
+    color: var(--color-text-evidence);
 }
 /**===============================================/
 /*Section about me*/
@@ -251,7 +265,7 @@ section{
     background-color: var(--background-button);
     padding: 10px;
     width: 100px;
-    border: 1px solid var(--color-text-evidenc);
+    border: 1px solid var(--color-text-evidence);
     margin-top: 10px;
     transition: .30s ;
     margin-right: 8px;
@@ -318,7 +332,7 @@ section{
     
 }
 .input:focus{
-    border-color: var(--color-text-evidenc);
+    border-color: var(--color-text-evidence);
 }
 #inputMensagem{
     width: 100%;
@@ -331,7 +345,7 @@ section{
     resize: none;
 }
 #inputMensagem:focus{
-    border-color: var(--color-text-evidenc);
+    border-color: var(--color-text-evidence);
 }
 .btnEnviar{
     padding: 10px;
@@ -352,6 +366,7 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,auto));
     gap: 2rem;
+    align-items: center;
     
 }
 .gnumber{
@@ -370,4 +385,7 @@ section{
 .copy{
     background-color: #2020208c;
     padding: 10px;
+}
+.row i{
+    font-size: 2rem;
 }
