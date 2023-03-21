@@ -18,6 +18,7 @@ menu.addEventListener('click', function () {
 //---------About-me btn Read  more---------------
 let BoxReadMore = document.querySelector('.read-more') 
 let btnReadMore = document.querySelector('.btnRead-more')
+let About = document.querySelector('.about-text')
 
 btnReadMore.addEventListener('click', function () {
    if(BoxReadMore.style.display == 'block'){

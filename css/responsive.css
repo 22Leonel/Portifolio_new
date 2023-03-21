@@ -1,4 +1,4 @@
-@media(max-width:900px){
+@media(max-width:990px){
     header{
         padding: 10px 3%;
         transition: .4s;
@@ -10,6 +10,12 @@
     .main-text{
         margin-top: 60px;
         transition: all .40s;
+    }
+    .img-hab{
+        width: 70%;
+    }
+    .other-nolege{
+        width: 70%;
     }
 }
 @media(max-width:750px){
@@ -31,7 +37,7 @@
         margin: 5px 0;
     }
     .nav-menu.open{
-    right: 0; /*direcao menu*/
+        right: 0; /*direcao menu*/
     }
 }
 
@@ -47,14 +53,36 @@
         transition: all .42s;
         margin: 0 auto;
     }
+    .main-img img{ /*METE AAGORA*/
+        width: 300px;
+        height: 300px;
+    }
 }
+@media(max-width:500px){
+    .card {
+        margin: 0 auto;
+
+      }
+      .card img{
+        width: 325px;
+      }
+}
+
 @media(max-width:415px){
+    header{
+       justify-content: space-between;
+       gap: 3.3rem;
+    }
     .main-text h1{
     font-size: 25px;
     } 
     .main-img img{
-        width: 300px;
+        width: 80%;
     } 
+    .about{
+        align-items: center;
+    }
+   
 
     .about-text p{
         width: 300px;
@@ -63,35 +91,65 @@
     .about-text{
         margin: 0 auto;
     }
+    header{
+        justify-content: space-around;
+    }
     body{
         background-color: #202020 ;
     }
     .img-about img{
         width: 300px;
-        transition: all .42s;
-        
+        transition: all .42s;   
     }
+    #habilidades img{
+        width: 60px;
+    }
+    .form-group{
+        width: 90%;
+    }
+    .card img{
+        width: 80%;
+    }
+    #projects{
+       padding: 15%;
+    }
+    
 }
 @media(max-width:400px){
     .main-text{
         width: 350px;
     }
    .main-text h1{
-    font-size: 20px;
-    padding: 5% 10%;
-    
+        font-size: 20px;
+        padding: 5% 10%;
    }
    .main-text h5{
-    font-size: 20px;
-    padding: 0 10%;
-}
+        font-size: 20px;
+        padding: 0 10%;
+    }
     .main-img img{
-        width: 300px;
+        width: 300px; /**/
+        height: 300px;
     }
 
-section{
+    section{
     padding: 0;
-}
+    }
+    #habilidades img{
+    width: 60px;
+    }
+    .form-group{
+        width: 80%;
+    }
+    .projects-deck{
+        margin: 0 auto;
+    }
+    .text-center h2{
+        font-size: 2rem;
+    }
+    .social{
+        padding: 10%;
+    }
 }
 @media(max-width:360px){
     .main-img img{
@@ -104,6 +162,24 @@ section{
     .img-about img{
         margin-left: -42px;
         transition: all .42s;
+        margin-bottom: -90px;
         
+    }
+    #habilidades img{
+        width: 60px;
+    }  
+    .text-center h2{
+        font-size: 1.9rem;
+    }
+    .projects-deck{
+        padding: 4%;
+    }
+}
+@media(max-width:265px){
+    .img-hab{
+        margin-left: 90px ;
+    }
+    .text-center h2{
+        margin-left: 78px ;
     }
 }

@@ -8,6 +8,12 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+    outline-style: none;
+    
+}
+body{
+    background-color: var(--background-body);
+    
 }
 :root{
     --background-body:#202020;
@@ -43,6 +49,7 @@ header{
     right: 0;
     z-index: 1000;
 }
+
 header.sticky{
     background: var(--background-secund-header);
     /*padding: 2%;*/
@@ -72,13 +79,12 @@ section{
     padding: 5% 10%;
 }
 
+/*==================================================*/
 /*Section Show-----------------------*/
 .evidencia{
     color: var(--color-text-evidenc);
 }
-.main-img img{
-    height: 400px;
-}
+
 .main-home{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px, auto));
@@ -86,7 +92,6 @@ section{
     align-items: center;
     background-color: var(--background-body);
     gap: 3rem;
-    
 }
 .down-arrow{
     position: absolute;
@@ -104,22 +109,26 @@ section{
 .main-text .evidencia{
     color: var(--color-text-evidenc);
 }
-
+/**===============================================/
 /*Section about me*/
 .about-me{
     background-color: var(--background-body);
 }
-.img-about{
+
+.img-about img{
     max-width: 100%;
     min-width: 200px;
     height: auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px var(--background-secund-header);
 }
 .about{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
-    gap: 1.5rem; /*Em analise*/
-    margin: 30px 0; 
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 4rem; /*Em analise*/
+    margin: 30px 0; 
+    
 }
 .about-text h2{
     color: var(--color-title2);
@@ -127,20 +136,19 @@ section{
     font-size: 2.3rem;
     font-weight: 600;
 }
-
 .about-text p{
-    color: var(--color-text);
+    display: block;
+    top: -200px;
     width: 600px;
+    color: var(--color-text);
     line-height: 1.6rem;
     margin-bottom: 20px;
     text-align: justify;
-    transition: all .40s;
+    transition: all .42s;
 }
 .btnRead-more{
-    /*background-color: var(--background-button);*/
     padding: 10px;
     background: none;
-   
     cursor: pointer;
     border: 1px solid var(--background-button);
     transition: all .42s;
@@ -153,4 +161,213 @@ section{
 }
 .read-more{
     display: none;
+}
+
+/*=================================================*/
+/*Section Hab*/
+#habilidades{
+    background-color: var(--background-body);
+}
+.text-center{
+    margin-top: 70px ;
+}
+.img-hab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 500px;
+    margin: 0 auto;
+}
+#habilidades img{
+    width: 100px;
+}
+#habilidades figcaption{
+    text-align: center;
+    color: var(--color-text);
+}
+.text-center h2{
+    color: var(--color-title2);
+    margin-bottom: 1.5rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+.other-nolege{
+    width: 500px;
+    margin: 0 auto;
+    
+}
+.other-nolege h3{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-title2);
+    margin: 30px 0;
+}
+.other-nolege p{
+    align-items: center;
+    color: var(--color-text);
+}
+
+/*=================================================*/
+/*Section projects*/
+#projects{
+    background-color: var(--background-body);
+    margin-bottom: 100px;
+    
+}
+.center-text{
+    margin-top: 110px;
+}
+#projects h2{
+    color: var(--color-title2);
+    margin-bottom: 1.5rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+.projects-deck{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 1rem;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+   
+}
+.card {
+    width: 350px;
+}
+.card img{
+    width: 350px;
+    height: 200px;
+}
+.card button{
+    background-color: var(--background-button);
+    padding: 10px;
+    width: 100px;
+    border: 1px solid var(--color-text-evidenc);
+    margin-top: 10px;
+    transition: .30s ;
+    margin-right: 8px;
+}
+.card button:hover{
+    background-color: transparent;
+    border-radius: 5px;
+   
+}
+.card h5{
+    color: var(--color-title2);
+    font-size: 1.5rem;
+    padding: .2rem;
+ }
+.card h6{
+    font-size: 1rem;
+    padding: .2rem;
+    color: var(--color-title);
+    font-weight: 400;
+}
+.card p{
+    padding: .2rem;
+    color: var(--color-text);
+}
+.card a{
+    color: var(--color-title2);
+    font-size: 1rem;
+}
+
+.card img:hover{
+    transition: .30s;
+    transform: scale(1.1);
+    box-sizing: border-box;
+    border-radius: .5rem;
+}
+/*=================================================*/
+/*Section contact*/
+#contact{
+    background-color: var(--background-body);
+}
+.subTitle h2{
+    color: var(--color-title2);
+    margin-bottom: 1.5rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-align: center; 
+}
+.form-group{
+    padding: 2%;
+    width: 50%;
+    margin: 0 auto;
+    background-color: var(--background-secund-header);
+    border-radius: 5px;
+    box-shadow: 0px .5px 0px .7px var(--color-text);
+}
+.input{
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border-bottom: 2px solid var(--color-text);
+    font-size: 1.2rem;
+    color: var(--color-text);
+    
+}
+.input:focus{
+    border-color: var(--color-text-evidenc);
+}
+#inputMensagem{
+    width: 100%;
+    height: 120px;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    background-color: transparent;
+    border-bottom: 2px solid var(--color-text);
+    resize: none;
+}
+#inputMensagem:focus{
+    border-color: var(--color-text-evidenc);
+}
+.btnEnviar{
+    padding: 10px;
+    width: 100px;
+    margin-top: 10px;
+    background-color: var(--background-button);
+    color: var(--color-title2);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+/*========================================================*/
+/*FOOTER*/
+#footer{
+    background-color: var(--background-secund-header);
+    margin-top: 3rem;
+}
+.social{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    gap: 2rem;
+    
+}
+.gnumber{
+    color: var(--color-text);
+    line-height: 2.3rem;
+}
+.redes-sociais a{
+    color: var(--color-text);
+    line-height: 2.3rem;
+}
+
+.copy p{
+    color: var(--color-text);
+    text-align: center;
+}
+.copy{
+    background-color: #2020208c;
+    padding: 10px;
 }
