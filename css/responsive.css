@@ -39,142 +39,250 @@
     .nav-menu.open{
         right: 0; /*direcao menu*/
     }
+    .logo{
+        width: 25px;
+    }
 }
 
 @media(max-width:690px){
-    .about-text p{
-        width: 400px;
-        transition: all .42s;
+    header{
+        justify-content: space-between;
+        padding: 20px 10%;
     }
     .about-text{
-        margin: 0 auto;
+         width: 100%;
     }
     .img-about{
         transition: all .42s;
         margin: 0 auto;
     }
-    .main-img img{ /*METE AAGORA*/
+    .main-home{
+        grid-template-columns: 1fr;
+    }
+    .main-img img{
         width: 300px;
         height: 300px;
     }
+   
+    .about{
+        align-items: center;
+       
+    }
+    .projects-deck{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
+
 @media(max-width:500px){
     .card {
         margin: 0 auto;
 
-      }
-      .card img{
+    }
+    .card img{
         width: 325px;
-      }
+    }
+    
+     
+}
+/*================TABLET==================*/
+@media(max-width:1024px) {
+    .main-social ul{
+        position: absolute;
+        top: 450px;
+        left: 0px;
+        width: 300px;
+        padding: 5% 10%;
+    }
+    .main-text h1{
+        font-size: 2.2rem;
+    }
+    .form-group{
+        width: 100%;
+        margin-bottom: 30px;
+    } 
+    .card{
+        width: 390px;
+    }
+    .card img{
+        width: inherit;
+        height: 200px;
+    }
+}
+@media(max-width:834px){
+    .main-text h1{
+        font-size: 1.5rem;
+        }     
+    
+    .main-img img{
+    width: 100%;
+    }  
+    .projects-deck{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+    .card{
+        width: 300px;
+    }
+    .card img{
+        width: inherit;
+        height: 200px;
+    }
+
+    .form-group{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .main-social ul{
+        position: absolute;
+        top: 395px;
+        left: 0px;
+        width: 300px;
+        padding: 5% 10%;
+    }
 }
 
+@media(max-width:768px){
+    .main-text h1{
+        font-size: 1.5rem;
+        }     
+    
+    .main-img img{
+    width: 100%;
+    }  
+    .projects-deck{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+    .card{
+        width: 300px;
+    }
+    .card img{
+        width: inherit;
+        height: 200px;
+    }
+
+    .form-group{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .main-social ul{
+        position: absolute;
+        top: 370px;
+        left: 0px;
+        width: 300px;
+        padding: 5% 10%;
+    }
+}
+
+/*==============MOBILE====================*/
 @media(max-width:415px){
-    header{
-       justify-content: space-between;
-       gap: 3.3rem;
+    
+    section{
+        padding: 2.5% 5%;
     }
     .main-text h1{
     font-size: 25px;
     } 
+    .main-home{
+      grid-template-columns: 1fr;
+      align-items: center;
+    }
     .main-img img{
         width: 80%;
     } 
     .about{
-        align-items: center;
+       margin: 0;
+       flex-direction: column;
+       align-items: center;
     }
-   
+    
+    .about-text{
+        transition: all .42s;
+        width: 100%;
+        font: .6rem;
+        height: auto;
+        margin-bottom: 30px;
+    }
 
     .about-text p{
-        width: 300px;
-        transition: all .42s;
-    }
-    .about-text{
-        margin: 0 auto;
+        width: inherit;
     }
     header{
-        justify-content: space-around;
-    }
-    body{
-        background-color: #202020 ;
-    }
-    .img-about img{
-        width: 300px;
-        transition: all .42s;   
+        justify-content: space-between;
     }
     #habilidades img{
         width: 60px;
     }
     .form-group{
-        width: 90%;
-    }
-    .card img{
-        width: 80%;
+        width: 100%;
+        margin-bottom: 30px;
     }
     #projects{
-       padding: 15%;
+        margin-bottom: 0;
+        height: auto;  
     }
-    
-}
-@media(max-width:400px){
-    .main-text{
+    .project-title{
+        margin-top: 30px;
+    }
+    .projects-deck{
+        margin-bottom: 30px;
+    }
+    .card{
         width: 350px;
     }
+    .card img{
+        width: inherit;
+        height: 200px;
+    }
+    footer{
+        width: auto;
+    }
+}
+/*===========================================*/
+@media(max-width:375px){
+    
    .main-text h1{
         font-size: 20px;
-        padding: 5% 10%;
    }
    .main-text h5{
         font-size: 20px;
-        padding: 0 10%;
     }
     .main-img img{
-        width: 300px; /**/
+        width: 300px;
         height: 300px;
     }
 
-    section{
-    padding: 0;
-    }
     #habilidades img{
     width: 60px;
     }
-    .form-group{
-        width: 80%;
+    #projects{
+       padding: 5% 0;
     }
-    .projects-deck{
-        margin: 0 auto;
+    .card{
+        width: 330px;
+    }
+    .card img{
+        width: inherit;
+        height: 200px;
+        padding-right: 5px;
+    }
+    .form-group{
+        width: 100%;
     }
     .text-center h2{
         font-size: 2rem;
     }
-    .social{
-        padding: 10%;
+    .main-social{
+        position: relative;
+        top: -70px;
+        width: 300px;
+        padding: 5% 10%;
     }
+    
 }
-@media(max-width:360px){
-    .main-img img{
-    width: 250px;
-    margin-right: 30px;
-    }
-    .about-text{
-    margin-left: 25px;
-    }
-    .img-about img{
-        margin-left: -42px;
-        transition: all .42s;
-        margin-bottom: -90px;
-        
-    }
-    #habilidades img{
-        width: 60px;
-    }  
-    .text-center h2{
-        font-size: 1.9rem;
-    }
-    .projects-deck{
-        padding: 4%;
-    }
-}
+/*===========================================*/
 @media(max-width:265px){
     .img-hab{
         margin-left: 90px ;
