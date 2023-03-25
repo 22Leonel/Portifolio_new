@@ -394,6 +394,9 @@ section{
 .redes-sociais a{
     color: var(--color-text);
     line-height: 2.3rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
 .copy p{
@@ -406,4 +409,9 @@ section{
 }
 .row i{
     font-size: 2rem;
+    
+}
+.row li{
+    
+    align-items: center;
 }
