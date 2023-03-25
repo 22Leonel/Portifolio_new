@@ -209,6 +209,11 @@
     .about-text p{
         width: inherit;
     }
+    .down-arrow{
+        position: absolute;
+        top: 85%;
+        right: 11%;
+    }
     header{
         justify-content: space-between;
     }
@@ -243,6 +248,10 @@
 /*===========================================*/
 @media(max-width:375px){
     
+    .down-arrow{
+        right: 9%;
+    }
+
    .main-text h1{
         font-size: 20px;
    }
