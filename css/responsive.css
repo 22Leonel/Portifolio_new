@@ -216,6 +216,10 @@
     }
     header{
         justify-content: space-between;
+        padding: 12px 5%;
+    }
+    .logo{
+        width: 2.8rem;
     }
     #habilidades img{
         width: 60px;
@@ -247,7 +251,13 @@
 }
 /*===========================================*/
 @media(max-width:375px){
-    
+    header{
+        justify-content: space-between;
+        padding: 12px 5%;
+    }
+    .logo{
+        width: 2.8rem;
+    }
     .down-arrow{
         right: 9%;
     }

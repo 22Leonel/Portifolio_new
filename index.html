@@ -65,15 +65,16 @@
                 </div> 
                 <p>
                     Sou o Manuel José, vivo em Luanda / Angola. Actualmente estou cursando Engenharia Informática, e actuando como Front-End. <br/><br/>
-                    Possuo conhecimentos sólidos em <span class="evidencia"> HTML 5</span> e<span class="evidencia"> CSS 3</span>. Estou me  aperfeiçoando em <span class="evidencia">JavaScript</span>. Para área voltada ao desenvolvimento de software para desktop, Possuo conhecimento em <span class="evidencia">C# (C-Sharp)</span>.
+                    Possuo conhecimentos sólidos em <span class="evidencia"> HTML 5</span> e<span class="evidencia"> CSS 3</span>. Estou me  aperfeiçoando em <span class="evidencia">JavaScript </span> e <span class="evidencia">NodeJs</span> para área de Back-end. Para área voltada ao desenvolvimento de software para desktop, Possuo conhecimento em <span class="evidencia">C#</span> (C-Sharp).
                     Optei pela área de Front-End, porque gosto de codificar coisas do zero e gosto de dar vida a ideias no navegador. 
                     <br>
                 </p>  
             <div class="read-more">
                 <br>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptas excepturi assumenda adipisci cupiditate dolorem odit, magni cum autem ex culpa, labore tenetur, reprehenderit corporis aut ea fuga in repellat!
+                    Estou actuando como desenvolder web já a caminho de 1 ano.
                 </p>
+                <a class="btn-cv" href="/Doc/CV-manuel.pdf" download="application/pdf"> Download CV </a>
             </div>
             <button class="btnRead-more">Ver mais</button>
         </div>   
@@ -109,43 +110,31 @@
             </figure>
         </div>
     </section>
-    <section id="projects">
+    <section id="projects" >
         <div class="project-title">
             <h2>Meus <span class="evidencia">Projectos</span></h2>
         </div>
         <div class="projects-deck">
-            <div class="card">
-                <img src="/images/loading.gif" alt="">   
-                <h5>Landing Page</h5>
-                <h6>Loja de Caffé</h6>
-                <p>HTML 5 | CSS 3 | Js</p>  
-                <button><a href="#">Ver Site</a></button>
-                <button><a href="#">Repositório</a></button>
+            <div id="card-1" class="card" >
+                <button  onclick="openModal(0)" class="btnViewSite">Ver Site</button>
             </div>
-            <div class="card">
-                <img src="/images/ecommerce.png" alt="">   
-                <h5>E-commerce</h5>
-                <h6>Shopping</h6>
-                <p>HTML 5 | CSS 3 | Js</p>  
-                <button><a href="https://shinera.netlify.app/" target="_blank">Ver Site</a></button>
-                <button><a href="https://github.com/22Leonel/Ecomerce" target="_blank">Repositório</a></button>
+            <div id="card-2"  class="card" >
+                <button onclick="openModal(1)" class="btnViewSite">Ver Site</button>
             </div>
-            <div class="card">
-                <img src="/images/loading.gif" alt="">   
-                <h5>Aguardando...</h5>
-                <h6>Aguardando...</h6>
-                <p>HTML 5 | CSS 3 | Js</p>  
-                <button><a href="#">Ver Site</a></button>
-                <button><a href="#">Repositório</a></button>
+            <div id="card-3" class="card">
+                <button  onclick="openModal(2)" class="btnViewSite">Ver Site</button>
             </div>
-            <div class="card">
-                <img src="/images/loading.gif" alt="">   
-                <h5>Aguardando...</h5>
-                <h6>Aguardando...</h6>
-                <p>HTML 5 | CSS 3 | Js</p>  
-                <button><a href="#">Ver Site</a></button>
-                <button><a href="#">Repositório</a></button>
+            <div id="card-4" class="card">
+                <button  onclick="openModal(3)" class="btnViewSite">Ver Site</button>
             </div>
+            <div id="card-5" class="card">
+                <button  onclick="openModal(4)" class="btnViewSite">Ver Site</button>
+            </div>
+            <div id="card-6" class="card">
+                <button  onclick="openModal(5)" class="btnViewSite">Ver Site</button>
+            </div>
+            
+            
         </div>
     </section>
     <section id="contact">
@@ -187,6 +176,78 @@
             <p> <span class="evidencia">Manuel José</span> &copy; 2022 </p>
         </div> 
     </footer>
+    
+    <!--Modal Windows-->
+    <div id="windowModal" class='windowModal' value="C1">
+        <div class="modal" >
+            <button id="close" class="close">X</button>
+            <img src="/images/ecommerce.png" alt="">
+            <h5>E-commerce</h5>
+            <p class="tec">HTML 5 | CSS 3 | Js</p>  
+            <p>É uma página de compras de produtos online de uma loja.</p>
+            <a href="https://shinera.netlify.app/" target="_blank">Ver Site</a>
+            <a href="https://github.com/22Leonel/Ecomerce" target="_blank">Repositório</a>
+        </div>
+    </div>
+    <div id="windowModal" class='windowModal' value="C2">
+        <div class="modal" ">
+            <button id="close" class="close">X</button>
+            <img src="/images/home-page-coffe.PNG" alt="">   
+            <h5>Landing Page Coffe</h5>
+            <!--<h6>Aguardando...</h6>-->
+            <p>HTML 5 | CSS 3 | Js</p>  
+            <p>Página de Café.</p>
+            <a href="#" target="_blank">Ver Site</a>
+            <a href="https://github.com/22Leonel/Landing-page-Coffe" target="_blank">Repositório</a>
+        </div>
+    </div>
+    <div id="windowModal" class='windowModal'>
+        <div class="modal">
+            <button id="close" class="close">X</button>
+            <img src="/images/loading.gif" alt="">
+            <h5>Aguardando...</h5>
+            <p class="tec">HTML 5 | CSS 3 | Js</p>  
+            <p>Lorem ipsum dolor sit amet consectetur..</p>
+            <a href="https://shinera.netlify.app/" target="_blank">Ver Site</a>
+            <a href="https://github.com/22Leonel/E" target="_blank">Repositório</a>
+        </div>
+    </div>
+    <div id="windowModal" class='windowModal'>
+        <div class="modal" >
+            <button id="close" class="close">X</button>
+            <img src="/images/loading.gif" alt="">
+            <h5>Aguardando...</h5>
+            <p class="tec">HTML 5 | CSS 3 | Js</p>  
+            <p>Lorem ipsum dolor sit amet consectetur..</p>
+            <a href="https://shinera.netlify.app/" target="_blank">Ver Site</a>
+            <a href="https://github.com/22Leonel/E" target="_blank">Repositório</a>
+        </div>
+    </div>
+    <div id="windowModal" class='windowModal'>
+        <div class="modal" >
+            <button id="close" class="close">X</button>
+          <img src="/images/loading.gif" alt="">
+            <h5>Aguardando...</h5>
+            <p class="tec">HTML 5 | CSS 3 | Js</p>  
+            <p>Lorem ipsum dolor sit amet consectetur..</p>
+            <a href="https://shinera.netlify.app/" target="_blank">Ver Site</a>
+            <a href="https://github.com/22Leonel/E" target="_blank">Repositório</a>
+        </div>
+    </div>
+    <div id="windowModal" class='windowModal'>
+        <div class="modal" >
+            <button id="close" class="close">X</button>
+          <img src="/images/loading.gif" alt="">
+            <h5>E-Aguardando...</h5>
+            <p class="tec">HTML 5 | CSS 3 | Js</p>  
+            <p>Lorem ipsum dolor sit amet consectetur..</p>
+            <a href="https://shinera.netlify.app/" target="_blank">Ver Site</a>
+            <a href="https://github.com/22Leonel/E" target="_blank">Repositório</a>
+        </div>
+    </div>
+    <!--Script------------------------------->
     <script src="/Js/script.js"></script>
 </body>
 </html>
+
+

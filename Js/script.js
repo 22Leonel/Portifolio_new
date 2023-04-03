@@ -18,15 +18,30 @@ menu.addEventListener('click', function () {
 //---------About-me btn Read  more---------------
 let BoxReadMore = document.querySelector('.read-more') 
 let btnReadMore = document.querySelector('.btnRead-more')
-let About = document.querySelector('.about-text')
 
 btnReadMore.addEventListener('click', function () {
-   if(BoxReadMore.style.display == 'block'){
-        BoxReadMore.style.display = 'none'
-        btnReadMore.textContent = 'Ver mais'
-
-    } else{
-        BoxReadMore.style.display = 'block'
-        btnReadMore.textContent = 'Ver menos'
-    } 
+   
+    BoxReadMore.classList.toggle('view')
+    
 })
+
+//Modal-Window ===============
+
+function openModal(nModal) {
+    const btnViewModal = document.querySelector('.btnViewSite')
+    const windowModal = document.querySelectorAll('#windowModal')
+    let n = nModal
+
+    //windowModal[n].length -1;
+    windowModal[n].classList.add('open')
+    
+  
+    windowModal[n].addEventListener('click', (e) =>{
+        if (e.target.id == 'close' || e.target.id == 'windowModal') {
+            windowModal[n].classList.remove('open')
+        }
+    
+    })
+    
+}
+
