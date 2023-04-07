@@ -18,6 +18,7 @@
         width: 70%;
     }
 }
+
 @media(max-width:750px){
     .nav-menu{
         position: absolute;
@@ -29,15 +30,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 100px 30px;
+        padding: 50px 30px;
         transition: all .42s;
     }
     .nav-menu a{
         display: block;
-        margin: 5px 0;
+        margin: 3px 0;
     }
     .nav-menu.open{
         right: 0; /*direcao menu*/
+      
     }
     .logo{
         width: 25px;
